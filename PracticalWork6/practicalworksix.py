@@ -67,7 +67,6 @@ class DutchAuction:
             self.current_price -= self.decrement
         print("[Голландський аукціон] Ніхто не прийняв ціну.")
 
-# Англійський аукціон
 print("Англійський аукціон")
 english = EnglishAuction()
 english.place_bid("Петро", 100)
@@ -76,7 +75,6 @@ english.place_bid("Орест", 120)
 english.close_auction()
 print()
 print("Аукціон з прихованими ставками")
-# Аукціон з прихованими ставками
 sealed = SealedBidAuction()
 sealed.place_bid("Петро", 110)
 sealed.place_bid("Віталій", 140)
@@ -84,6 +82,5 @@ sealed.place_bid("Орест", 130)
 sealed.close_auction()
 print()
 print("Голландський аукціон")
-# Голландський аукціон 
 dutch = DutchAuction(starting_price=200, decrement=10, min_price=100)
 dutch.simulate("Віталій")
