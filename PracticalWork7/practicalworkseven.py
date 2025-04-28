@@ -53,7 +53,7 @@ def search_mixed_strategies(payment_matrix, company_name):
     if all(value >= 0 for value in solution.values()):
         print("\nРішення є валідним: всі ймовірності невід'ємні")
     else:
-        print("\n⚠️ Увага: деякі ймовірності від'ємні або некоректні.")
+        print("\nУвага: деякі ймовірності від'ємні або некоректні.")
 
 # Побудова платіжних матриць
 prices_A = market_data['price_levels']['EcoRide']
